@@ -1,0 +1,112 @@
+:root{
+    --primary-color-solid:#ca6ce6;
+    --primary-color-transparent:rgba(202, 108, 230 ,0.8);
+    --secondary-color-solid:#c92ff8;
+    --secondary-color-transparent:rgba(201, 47, 248 ,0.8);
+    --dark-color-solid:rgba(34,34,34,1);
+    --dark-color-transparent:rgba(34,34,34,0.8);
+    --light-color:#eee;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto" , Arial, Helvetica, sans-serif;
+}
+body::-webkit-scrollbar{
+    display: none;;
+}
+.layout-grid{
+    display: grid;
+    gap: 0.8rem;
+    grid-template-areas: 
+    'section-1 section-1'
+    'section-2 section-2'
+    'section-3 section-4'
+    'section-5 section-6';
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: var(--dark-color-solid);
+}
+.navbar{
+    background-color: var(--dark-color-transparent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5vh;
+    width: 100vw;
+    border-bottom: var(--primary-color-solid) 2px solid;
+    position: fixed;
+    top:0px;
+    z-index: 10;
+}
+.navbar .logo{
+    width: 4%;
+    display: inline-block;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+li{
+    display: inline-block;
+}
+.navbar .nav-list li a{
+    color:var(--primary-color-solid);
+    font-size:1rem;
+    padding:.5rem 1rem;
+    border-radius: .75rem;
+    margin: 0.75rem;
+    transition: background-color 0.4s ease,color 0.4s ease;
+    
+} 
+.layout-grid .img-1{
+    width: 100vw;
+    height: 100vh;
+    background: url('https://www.gamingdebugged.com/wp-content/uploads/2021/09/purple-gaming-set-up-1.jpg') no-repeat center center/cover;
+    grid-area: section-1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+}
+.layout-grid .img-1 h2{
+    font-weight: 900;
+}
+.layout-grid .img-1 p,#about p{
+    font-weight: 500;
+}
+.navbar .nav-list li a:hover{
+    background-color: var(--light-color);
+    color: var(--dark-color-solid);
+}
+.layout-grid .build_btn{
+    margin-top: 15px;
+}
+.product-1{
+    grid-area: section-2;
+    background: url('https://i.pinimg.com/originals/19/1e/2f/191e2f784174af9bb3f4729c5c9168cc.png') no-repeat center center/cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: flex-start;
+    z-index: 0;
+    width: 100vw;
+    height: 100vh;
+}
+.product-1 h2{
+    margin-top: 50px;
+}
+.product-1 a{
+    margin-top: 20px;
+}
