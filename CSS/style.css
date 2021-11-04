@@ -81,7 +81,7 @@ li{
 .layout-grid .img-1 h2{
     font-weight: 900;
 }
-.layout-grid .img-1 p,#about p{
+.layout-grid .img-1 p,.product-1 p{
     font-weight: 500;
 }
 .navbar .nav-list li a:hover{
