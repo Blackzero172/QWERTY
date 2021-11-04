@@ -6,11 +6,11 @@
 }
 .btn{
     padding: 10px 15px;
-    background-color: var(--secondary-color-solid);
+    background-color: var(--primary-color-solid);
     transition:background-color .4s ease;
 }
 .btn:hover{
-    background: var(--secondary-color-transparent);
+    background: var(--primary-color-transparent);
 }
 .text-dark{
     color: var(--dark-color-solid);

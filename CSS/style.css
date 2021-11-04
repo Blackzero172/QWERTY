@@ -18,12 +18,15 @@ body::-webkit-scrollbar{
 }
 .layout-grid{
     display: grid;
-    gap: 0.8rem;
+    gap: 1.1rem;
     grid-template-areas: 
     'section-1 section-1'
     'section-2 section-2'
     'section-3 section-4'
-    'section-5 section-6';
+    'section-5 section-6'
+    'contact contact'
+    'contact contact'
+    'footer footer';
 }
 html{
     scroll-behavior: smooth;
@@ -91,7 +94,7 @@ li{
 .layout-grid .build_btn{
     margin-top: 15px;
 }
-.product-1{
+.product-1,.product-2,.product-3,.product-4,.product-5{
     grid-area: section-2;
     background: url('https://i.pinimg.com/originals/19/1e/2f/191e2f784174af9bb3f4729c5c9168cc.png') no-repeat center center/cover;
     position: relative;
@@ -104,9 +107,126 @@ li{
     width: 100vw;
     height: 100vh;
 }
-.product-1 h2{
+.product-1 h2, .product-2 h2,.product-3 h2,.product-4 h2,.product-5 h2{
     margin-top: 50px;
 }
-.product-1 a{
+.product-1 a, .product-2 a,.product-3 a,.product-4 a,.product-5 a{
     margin-top: 20px;
+}
+.product-2,.product-3,.product-4,.product-5{
+    width: 50vw;
+    grid-area: section-3;
+}
+.product-2{
+    background: url('https://i.pinimg.com/originals/92/c0/82/92c082515317eb8d723562a8bf618a95.jpg') no-repeat center center/cover;
+    
+}
+.product-3{
+    grid-area: section-4;
+    background: url('https://image.made-in-china.com/2f0j00nVcgoHhLrKkv/Oneray-Factory-Made-OEM-RGB-LED-Racing-Computer-PC-Gamer-Chair-Gaming-Chair.jpg') no-repeat center center/cover;
+    text-align: center;
+}
+.product-4{
+    grid-area: section-5;
+    background: url('https://akm-img-a-in.tosshub.com/sites/itgaming/resources/202103/logitech-g733-lightspeed-wireless-rgb-gaming-headset-review-feature-image150321104249.jpeg') no-repeat center center/cover;
+}
+.product-5{
+    grid-area: section-6;
+    background: url('https://downloads.monoprice.com/files/images/42770_01.jpg') no-repeat center center/cover;
+    background-position: -300px;
+}
+.footer{
+    width: 100vw;
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5vh;
+}
+.footer h2{
+    display: inline-block;
+    font-size: 1.2rem;
+}
+.footer i{
+   margin: 0 30px;
+   color: var(--primary-color-solid);
+   transition: color 0.2s ease;
+}
+.footer i:hover{
+    color: var(--light-color);
+}
+#contact{
+    display: flex;
+    align-items: center;
+    grid-area: contact;
+    flex-direction: column;
+    width: 100vw;
+    height: 70vh;
+    padding: 100px;
+}
+.form{
+    width: 20vw;
+}
+.form label{
+    display: block;
+}
+.form h2{
+    text-align: center;
+}
+.form input{
+    width: 100%;
+    height: 10%;
+    border: none;
+    border-radius: 10px;
+    background: var(--light-color);
+}
+.form textarea{
+    width: 100%;
+}
+.form input:focus,.form textarea:focus{
+    outline-color: var(--primary-color-solid);
+}
+#about{
+    width: 95vw;
+    height: 200vh;
+    background-size: 50%;
+    margin-left: 2.5vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+}
+.background::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom right,rgb(100, 255, 255),var(--primary-color-solid));
+    position: absolute;
+    z-index: -10;
+    filter: blur(4px);
+}
+#about .text-container{
+    width: 70%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    line-height: 1.3;
+}
+#about .text-container p{
+    margin-bottom: 300px;
+}
+.background{
+    width: 95vw;
+    height: 200vh;
+    background-size: 50%;
+    margin-left: 2.5vw;
+    position: absolute;
+    background: url('../assets/image/Logo.png') no-repeat center center/cover;
+    z-index: -9;
+}
+#about .text-container h3{
+    font-size: 1.8rem;
 }
