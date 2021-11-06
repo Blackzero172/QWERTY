@@ -19,65 +19,106 @@
     <title>Welcome to QWERTY.IT</title>
 </head>
 <body>
-    <div class="layout-grid text-light">
+    <div class="layout-grid text-light" id="home">
         <nav class="navbar">
             <img src="./assets/image/Logo.png" alt="My Logo" class="logo">
             <ul class='nav-list'>
-                <li><a href="">Home</a></li>
+                <li><a href="#home">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="build.html">Build</a></li>
                 <li><a href="products.html">Products</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
         <section class="img-1 bg-overlay">
-            <h2 class="text-shadow-primary text-light text-large">Welcome to QWERTY.IT</h2>
-            <p class="text-medium">The World's #1 choice for building custom PCs and purchasing Accessories!</p>
-            <a href="build.html" class="btn build_btn text-dark text-small">Build Yours Now! <i class="fas fa-chevron-right"></i></a>
+            <h2 class="text-shadow-primary text-light text-large">
+                Welcome to QWERTY.IT
+            </h2>
+            <p class="text-medium">
+                The World's #1 choice for purchasing Accessories!
+            </p>
+            <a href="build.html" class="btn build_btn text-dark text-small">
+                Build Yours Now! 
+                <i class="fas fa-chevron-right"></i>
+            </a>
         </section>
         <section  class="bg-overlay product-1">
-            <h2 class="text-large text-shadow-primary">The All New IT Speed</h2>
-            <p class="text-mediumy ">Your Gateway into High-Level Gaming</p>
-            <a href="products.html" class="btn text-dark">Buy Now!   <i class="fas fa-chevron-right"></i></a>
+            <h2 class="text-large text-shadow-primary">
+                The All New IT Speed
+            </h2>
+            <p class="text-mediumy ">
+                Your Gateway into High-Level Gaming
+            </p>
+            <a href="products.html" class="btn text-dark">Buy Now!   
+                <i class="fas fa-chevron-right"></i>
+            </a>
             
         </section>
         <section class="product-2 bg-overlay">
-            <h2 class="text-large text-shadow-primary">The Ol' Reliable Doomfist</h2>
-            <p class="text-mediumy ">Transform Your Typing Experience</p>
-            <a href="products.html" class="btn text-dark">Buy Now! <i class="fas fa-chevron-right"></i></a>
+            <h2 class="text-large text-shadow-primary">
+                The Ol' Reliable Doomfist
+            </h2>
+            <p class="text-medium">
+                Transform Your Typing Experience
+            </p>
+            <a href="products.html" class="btn text-dark">
+                Buy Now! <i class="fas fa-chevron-right"></i>
+            </a>
         </section>
         <section class="product-3 bg-overlay">
-            <h2 class="text-large text-shadow-primary">The Control Station</h2>
-            <p class="text-medium">an Essential part of every Spaceship</p>
-            <a href="products.html" class="btn text-dark">Buy Now! <i class="fas fa-chevron-right"></i></a>
+            <h2 class="text-large text-shadow-primary">
+                The Control Station
+            </h2>
+            <p class="text-medium">
+                an Essential part of every Spaceship
+            </p>
+            <a href="products.html" class="btn text-dark">
+                Buy Now! <i class="fas fa-chevron-right"></i>
+            </a>
         </section>
         <section class="product-4 bg-overlay">
-            <h2 class="text-large text-shadow-primary">The Hexa-Grid</h2>
-            <p class="text-medium">Top-Tier Gaming Headset</p>
-            <a href="products.html" class="btn text-dark">Buy Now! <i class="fas fa-chevron-right"></i></a>
+            <h2 class="text-large text-shadow-primary">
+                The Hexa-Grid
+            </h2>
+            <p class="text-medium">
+                Top-Tier Gaming Headset
+            </p>
+            <a href="products.html" class="btn text-dark">
+                Buy Now! <i class="fas fa-chevron-right"></i>
+            </a>
             
         </section>
         <section class="product-5 bg-overlay">
-            <h2 class="text-large text-shadow-primary">Dark Matter</h2>
-            <p class="text-medium">360Hz Monitor</p>
-            <a href="products.html" class="btn text-dark">Buy Now! <i class="fas fa-chevron-right"></i></a>
+            <h2 class="text-large text-shadow-primary">
+                Dark Matter
+            </h2>
+            <p class="text-medium">
+                360Hz Monitor
+            </p>
+            <a href="products.html" class="btn text-dark">
+                Buy Now! <i class="fas fa-chevron-right"></i>
+            </a>
         </section>
         <footer class="footer">
-            <h2>Copyright &copy; 2021 QWERTY.IT Inc. All Rights Reserved </h2>
+            <h2>
+                Copyright &copy; 2021 QWERTY.IT Inc. All Rights Reserved 
+            </h2>
         </footer>
         <div id="contact">
-        <form action="POST" class="form">
-            <h2>Contact Us!</h2>
-            <label for="name">Name</label>
-            <input type="text" name="name"
-             id="name" placeholder="Enter your Name...">
-            <label for="email">Email</label>
-            <input type="email" name="email"
-             id="email" placeholder="Enter your Email...">
-            <label for="message">Message</label>
-            <textarea name="message" id="message" cols="30" rows="10"></textarea>
-        </form>
-    </div>
+            <form action="POST" class="form">
+                <h2>Contact Us!</h2>
+                <label for="name">Name</label>
+                <input type="text" name="name"
+                id="name" placeholder="Enter your Name...">
+                <label for="email">Email</label>
+                <input type="email" name="email"
+                id="email" placeholder="Enter your Email...">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                <div class="submit">
+                <input class="btn btn_submit"type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
     </div>
 </body>
 </html>

@@ -12,6 +12,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Roboto" , Arial, Helvetica, sans-serif;
+    text-align: center;
 }
 body::-webkit-scrollbar{
     display: none;;
@@ -68,7 +69,7 @@ li{
     transition: background-color 0.4s ease,color 0.4s ease;
     
 } 
-.layout-grid .img-1{
+.layout-grid section.img-1{
     width: 100vw;
     height: 100vh;
     background: url('https://www.gamingdebugged.com/wp-content/uploads/2021/09/purple-gaming-set-up-1.jpg') no-repeat center center/cover;
@@ -104,8 +105,8 @@ li{
     align-items: center;
     justify-content: flex-start;
     z-index: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 50vh;
 }
 .product-1 h2, .product-2 h2,.product-3 h2,.product-4 h2,.product-5 h2{
     margin-top: 50px;
@@ -114,7 +115,6 @@ li{
     margin-top: 20px;
 }
 .product-2,.product-3,.product-4,.product-5{
-    width: 50vw;
     grid-area: section-3;
 }
 .product-2{
@@ -133,7 +133,6 @@ li{
 .product-5{
     grid-area: section-6;
     background: url('https://downloads.monoprice.com/files/images/42770_01.jpg') no-repeat center center/cover;
-    background-position: -300px;
 }
 .footer{
     width: 100vw;
@@ -155,6 +154,14 @@ li{
 .footer i:hover{
     color: var(--light-color);
 }
+.form .btn_submit{
+    width: 30%;
+    background-color: var(--primary-color-solid);
+}
+.submit{
+    display: flex;
+    justify-content: center;
+}
 #contact{
     display: flex;
     align-items: center;
@@ -165,7 +172,7 @@ li{
     padding: 100px;
 }
 .form{
-    width: 20vw;
+    width: 20rem;
 }
 .form label{
     display: block;
@@ -205,6 +212,7 @@ li{
     position: absolute;
     z-index: -10;
     filter: blur(4px);
+    left: 0;
 }
 #about .text-container{
     width: 70%;
@@ -225,8 +233,134 @@ li{
     margin-left: 2.5vw;
     position: absolute;
     background: url('../assets/image/Logo.png') no-repeat center center/cover;
-    z-index: -9;
+    z-index: -5;
 }
 #about .text-container h3{
     font-size: 1.8rem;
+}
+#about h3,#about h2,#about p{
+    text-align: left;
+}
+.products-grid{
+    display: grid;
+    gap: 8rem 1.5rem;
+    grid-template-columns: repeat(4,1fr);
+
+}
+.products-grid div{
+    width: 175px;
+    height: 175px;
+    /* background: red; */
+    position: relative;
+    border: var(--secondary-color-solid) 3px solid;
+    z-index: 0;
+    transition: transform 0.3s ease;
+}
+.flex-container{
+    margin-top: 50px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.products-grid div::before{
+    content: attr(data-text);
+    width: 110%;
+    height: 20%;
+    /* background: blue; */
+    position: absolute;
+    bottom: 100%;
+    left: -5%;
+    text-align: center;
+}
+.products-grid div:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.img-1{
+    background: url('https://i.pinimg.com/originals/19/1e/2f/191e2f784174af9bb3f4729c5c9168cc.png') no-repeat center center/cover;
+}
+.img-2{
+    background: url('https://i.pinimg.com/originals/92/c0/82/92c082515317eb8d723562a8bf618a95.jpg') no-repeat center center/cover;
+}
+.img-3{
+    background: url('https://akm-img-a-in.tosshub.com/sites/itgaming/resources/202103/logitech-g733-lightspeed-wireless-rgb-gaming-headset-review-feature-image150321104249.jpeg') no-repeat center center/cover;
+}
+.img-4{
+    background: url('https://downloads.monoprice.com/files/images/42770_01.jpg') no-repeat center center/cover;
+}
+.img-5{
+    background: url('https://i.ebayimg.com/images/g/lecAAOSwryBgUMXa/s-l400.jpg') no-repeat center center/cover;
+}
+.img-6{
+    background: url('https://d2fu7qgd3tdbcc.cloudfront.net/images/detailed/1/clear-translucent-max9-purple.jpg?t=1448959438') no-repeat center center/cover;
+}
+.img-7{
+    background: url('https://image.made-in-china.com/2f0j00nVcgoHhLrKkv/Oneray-Factory-Made-OEM-RGB-LED-Racing-Computer-PC-Gamer-Chair-Gaming-Chair.jpg') no-repeat center center/cover;
+}
+.img-8{
+    background: url('https://i.pinimg.com/736x/1c/32/14/1c32149a20678e8144984004cd1b6b34.jpg') no-repeat center center/cover;
+}
+.img-9{
+    background: url('https://img.tttcdn.com/product/xy/2000/2000/p/gu1/P/W/PAC0108W/PAC0108W-1-9491-PSxW.jpg') no-repeat center center/cover;
+}
+.img-10{
+    background: url('../assets/image/micPhoto.png') no-repeat center center/cover;
+}
+.img-11{
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTfzmv-8iCPv-1s2V1Rae2YOCYLYm6DcVDxw&usqp=CAU') no-repeat center center/cover;
+}
+.img-12{
+    background: url('https://en.tracer.eu/gfx-base/files/TRA/JOY/46852/hire_46852_5.jpg') no-repeat center center/cover;
+}
+@media (max-width:500px){
+    .layout-grid{
+        grid-template-areas: 
+        'section-1'
+        'section-2'
+        'section-3'
+        'section-4'
+        'section-5'
+        'section-6'
+        'contact'
+        'contact'
+        'footer';
+    }
+    .navbar .logo{
+        /* display: none; */
+        position: absolute;
+        left: 0;
+        width: 40px;
+    }
+    .navbar .nav-list li {
+        width: 5rem;
+    }
+    .navbar .nav-list li a{
+        margin: 0;
+        padding: 0.2rem;
+    }
+    .products-grid{
+        grid-template-columns: repeat(2,1fr);
+        padding: 0;
+    }
+    .flex-container{
+        height: 100%;
+    }
+    .background{
+       height: 350vh;
+    }
+
+    #about{
+        height:120%
+    }
+}
+@media (min-width:501px) and (max-width:768px){
+    .background{
+        height: 250vh;
+     }
+ 
+     #about{
+         height:120%
+     }
 }
